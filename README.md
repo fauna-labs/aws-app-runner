@@ -2,9 +2,10 @@ This repository contains unofficial patterns, sample code, or tools to help deve
 
 ---
 
-# Building a REST API with AWS App Runner and Fauna
 
-This repository contains the source code referenced in the blog post Building a serverless REST API with AWS SAM and Fauna.
+# Deploying a REST API with AWS App Runner and Fauna
+
+This repository contains the source code referenced in the blog post [Deploying a REST API with AWS App Runner and Fauna][blog].
 
 ---
 Copyright Fauna, Inc. or its affiliates. All rights reserved. SPDX-License-Identifier: MIT-0
@@ -13,3 +14,4 @@ Copyright Fauna, Inc. or its affiliates. All rights reserved. SPDX-License-Ident
 [fauna]: https://www.fauna.com/
 [fauna-labs]: https://github.com/fauna-labs
 [fauna-organization]: https://github.com/fauna
+
