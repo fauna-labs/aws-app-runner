@@ -10,3 +10,6 @@ run:
   command: npm run start
   network:
     port: 3000
+  env:
+    - name: FAUNA_SECRET_PARAMETER
+      value: fauna-secret
