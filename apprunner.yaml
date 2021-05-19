@@ -1,0 +1,12 @@
+version: 1.0
+runtime: nodejs12
+
+build:
+  commands:
+    build:
+      - npm ci
+
+run:
+  command: npm run start
+  network:
+    port: 3000
