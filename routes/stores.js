@@ -14,14 +14,14 @@ const f = require('faunadb'),
 let client;
 
 const init = async () => {
-    param = process.env.FAUNA_SECRET_PARAMETER
+    let param = process.env.FAUNA_SECRET_PARAMETER
     console.log(`Got secret parameter key ${param}`);
 
     // Get the Fauna Server Key from AWS Systems Manager Parameter Store at runtime.
     const { Parameter: { Value } } = await ssm.getParameter({ Name:  process.env.FAUNA_SECRET_PARAMETER, WithDecryption: true }).promise();
     
     console.log(`Got decrypted parameter value ${Value}`);
-    
+
     // Setup our Fauna client
     client = new f.Client({ secret: Value }, { headers: { 'X-Fauna-Source': 'blog-app-runner' } })
 }
